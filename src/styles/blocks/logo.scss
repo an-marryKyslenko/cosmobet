@@ -1,0 +1,21 @@
+.logo {
+	display: flex;
+	align-items: center;
+	font-size:34px;
+	font-weight: 700;
+
+	&__left {
+		display: flex;
+		align-items: center;
+		color: $blue;
+	}
+
+	&__img {
+		width: 30px;
+		height: 30px;
+	}
+
+	&__right {
+		color: $red;
+	}
+}

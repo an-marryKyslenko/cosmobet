@@ -1,3 +1,30 @@
 @import 'utils/variables';
 @import 'utils/mixin';
-@import 'blocks/card';
+@import 'utils/null';
+@import 'fonts/icons';
+@import 'blocks/preloader';
+@import 'blocks/header';
+@import 'blocks/banner';
+@import 'blocks/button';
+@import 'blocks/logo';
+@import 'blocks/main';
+@import 'blocks/footer';
+
+body{
+	background-color: $bg;
+	color: #fff;
+	font-family: 'Poppins';
+	font-size: .81rem;
+	min-height: 100vh;
+	margin: 0;
+}
+
+#app{
+	flex-direction: column;
+}
+
+[class$="__container"] {
+	max-width: 1200px;
+	margin-inline: auto;
+	padding-inline: 16px;
+}

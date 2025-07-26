@@ -1,0 +1,93 @@
+.header {
+	background-color: $bg;
+	border-bottom: 1px solid #101317;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 2;
+	
+	&__container {
+		height: $header-height;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__logo {
+		display: none !important;
+
+		@include on-tablet{
+			display: flex !important;
+		}
+
+		&-small{
+			font-size:34px;
+			font-weight: 700;
+			color: $blue;
+			display: block !important;
+			
+			img{
+				width: 30px;
+				height: 30px;
+			}
+
+			@include on-tablet{
+				display: none !important;
+			}
+		}
+	}
+
+	&__auth {
+		gap: .5333rem;
+	}
+}
+
+.nav {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	background: $bg;
+	width: 100%;
+	height: $header-height;
+
+	box-sizing: border-box;
+	border-top: 1px solid #101317;
+	display: flex;
+	padding-inline: 20px;
+	justify-content: space-between;
+	
+	@include on-tablet{
+		align-items: center;
+		position: static;
+		border: none;
+		background: none;
+	}
+
+	&__menu {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		gap: 30px;
+		width: 100%;
+
+		@include on-tablet{
+			justify-content: start;
+		}
+	}
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		transition: opacity 0.3s ease 0s;
+
+		i{
+			font-size: 20px;
+		}
+
+		&:hover{
+			opacity: 0.6;
+		}
+	}
+}

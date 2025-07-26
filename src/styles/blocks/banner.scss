@@ -1,0 +1,37 @@
+.banner {
+	height: 300px;
+	background: url('../assets/banner-4.jpg') center/cover no-repeat;
+	border-top-left-radius: 1.625rem;
+	border-top-right-radius: 1.625rem;
+	margin: 8px 20px;
+
+	@include on-tablet{
+		background: url('../assets/banner-2.jpg') center/cover no-repeat;
+	}
+
+	@include on-desktop{
+		background: url('../assets/banner-1.jpg') center/cover no-repeat;
+	}
+
+	&__container{
+		height: 100%;
+	}
+
+	&__title{
+		margin: 0;
+		font-size: 1.4667rem;
+		font-weight: 700;
+		line-height: 3.3333rem;
+	}
+
+	&__content {
+		color: white;
+		padding: 20px;
+		width: 50%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: start;
+		flex-direction: column;
+	}
+}
