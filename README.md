@@ -1,4 +1,4 @@
-# Template - Parcel
+# Cosmobet
 
 ##  Stack
 - HTML/CSS/SCSS
@@ -11,3 +11,7 @@
 npm install
 npm run start
 ```
+
+## DEMO
+
+[link](https://an-marrykyslenko.github.io/cosmobet/)
