@@ -12,6 +12,12 @@ npm install
 npm run start
 ```
 
+## Repo
+
+[link](https://github.com/an-marryKyslenko/cosmobet)
+
 ## DEMO
 
 [link](https://an-marrykyslenko.github.io/cosmobet/)
+
+## End
